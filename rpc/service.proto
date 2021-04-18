@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package twirp.SFfoodTrucksV2;
+option go_package = "/SFfoodTrucksV2";
+
+service UniversalPaperclips {
+  rpc GetPaperclips(Location) returns (Foodtrucks);
+}
+
+message Location {
+  float latitude = 1;
+  float longitude = 2;
+}
+
+message Foodtrucks {
+    repeated Foodtruck foodtrucks = 1;
+}
+
+message Foodtruck {
+  string applicant = 1;
+  string fooditems = 2;
+  string address = 3;
+  float latitude = 4;
+  float longitude = 5;
+}
