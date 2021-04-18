@@ -1,9 +1,8 @@
-package SFfoodTrucksV2
+package SFfoodTrucksV2server
 
 import (
 	"context"
 	"math/rand"
-
-	 "github.com/daniellenarduzzi/SFfoodtrucksServerV2"
 	"github.com/twitchtv/twirp"
+	pb "github.com/daniellenarduzzi/SFfoodtrucksServerV2/src/SFfoodTrucksV2"
 )
